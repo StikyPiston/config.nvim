@@ -2,9 +2,11 @@
   config,
   pkgs,
   inputs,
+  ...
 }:
 
 {
+
   vim = {
 
     utility.snacks-nvim = {
@@ -18,4 +20,5 @@
     };
 
   };
+
 }
