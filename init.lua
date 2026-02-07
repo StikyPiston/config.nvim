@@ -16,6 +16,7 @@ require("plugins.lspconfig")
 require("plugins.lualine")
 require("plugins.noice")
 require("plugins.triforce")
+require("plugins.markview")
 
 -- LSP servers
 require("lsp.gopls")
