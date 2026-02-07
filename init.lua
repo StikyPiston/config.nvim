@@ -26,6 +26,7 @@ require("plugins.barbar")
 require("plugins.lazydev")
 require("plugins.gitsigns")
 require("plugins.autoclose")
+require("plugins.studytools")
 
 -- LSP servers
 require("lsp.gopls")
