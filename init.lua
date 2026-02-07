@@ -4,4 +4,5 @@
 -- | |\  |  __/ (_) \ V /| | | | | | |
 -- |_| \_|\___|\___/ \_/ |_|_| |_| |_|
 
-print("Hello, world!")
+-- Require the actual configs
+require("config")
