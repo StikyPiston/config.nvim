@@ -30,6 +30,8 @@ require("plugins.studytools")
 require("plugins.snacks")
 require("plugins.multicursor")
 require("plugins.trouble")
+require("plugins.smudge")
+require("plugins.todo-comments")
 
 -- LSP servers
 require("lsp.gopls")
