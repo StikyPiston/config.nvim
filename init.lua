@@ -23,6 +23,7 @@ require("plugins.blink-cmp")
 require("plugins.unobtrusive-relnums")
 require("plugins.cheaty")
 require("plugins.barbar")
+require("plugins.lazydev")
 
 -- LSP servers
 require("lsp.gopls")
