@@ -30,10 +30,10 @@ map('n', '<leader>w', ':w<CR>', { desc = "Write current buffer", silent = true }
 map('n', '<leader>q', ':q<CR>', { desc = "Close current buffer", silent = true })
 map('n', '<leader>lf', vim.lsp.buf.format, { desc = "Language format", silent = true })
 map('n', '<leader>cs', ':Cheaty<CR>', { desc = "Open cheaty cheatsheet", silent = true })
-map('n', '<leader>tp', ':Triforce profile<CR>')
-map('n', '<leader>sp', ':StudytoolsPomodoro 25 5<CR>')
-map('n', '<leader>sP', ':StudytoolsPomodoroStatus<CR>')
-map('n', '<leader>sb', ':StudytoolsBlurt<CR>')
+map('n', '<leader>tp', ':Triforce profile<CR>', { desc = "Open triforce profile", silent = true })
+map('n', '<leader>sp', ':StudytoolsPomodoro 25 5<CR>', { desc = "Start pomodoro session", silent = true })
+map('n', '<leader>sP', ':StudytoolsPomodoroStatus<CR>', { desc = "Show pomodoro status", silent = true })
+map('n', '<leader>sb', ':StudytoolsBlurt<CR>', { desc = "Open blurt buffer", silent = true })
 
 -- Splits
 map('n', 'hH',         ':tabNext<CR>', { desc = "Switch to next tab", silent = true })
