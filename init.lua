@@ -11,3 +11,4 @@ require("config.binds")
 -- Plugins
 require("plugins.catppuccin")
 require("plugins.oil")
+require("plugins.mini")
