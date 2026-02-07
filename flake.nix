@@ -20,7 +20,7 @@
       in
       {
         packages.default = pkgs.symlinkJoin {
-          name = "neovim";
+          name = "nvim";
           buildInputs = [ pkgs.makeWrapper ];
           paths = [ neovim-nightly-overlay.packages.${pkgs.stdenv.hostPlatform.system}.default ];
           postBuild = ''
