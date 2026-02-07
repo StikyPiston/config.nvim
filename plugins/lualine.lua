@@ -12,7 +12,7 @@ require("lualine").setup({
 		lualine_a = { "mode" },
 		lualine_b = { "filename" },
 		lualine_c = {},
-		lualine_x = { require("triforce.lualine").level, "filetype", "location", "diff" },
+		lualine_x = { "filetype", "location", "diff" },
 		lualine_y = { "lsp_status", "diagnostics" },
 		lualine_z = {}
 	}
