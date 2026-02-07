@@ -28,6 +28,7 @@ require("plugins.gitsigns")
 require("plugins.autoclose")
 require("plugins.studytools")
 require("plugins.snacks")
+require("plugins.multicursor")
 
 -- LSP servers
 require("lsp.gopls")

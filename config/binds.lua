@@ -49,3 +49,8 @@ map('n', '<C-Right>',  '<C-w>l')
 -- Double-letter binds
 map('n', 'tT', ':Oil<CR>', { desc = "Open oil"})
 map('n', 'fF', ':Pick files<CR>', { desc = "Open mini.pick", silent = true })
+
+-- Multicursor binds
+map('n', '<A-Up>',     function() require("multicursor-nvim").lineAddCursor(-1) end)
+map('n', '<A-Down>',   function() require("multicursor-nvim").lineAddCursor(1) end)
+map('n', ',',          function() require("multicursor-nvim").clearCursors() end)
