@@ -7,6 +7,11 @@ require("mini.surround").setup()
 require("mini.clue").setup({
 	triggers = {
 		{ mode = { 'n', 'x' }, keys = '<Leader>' },
-		{ mode = { 'n', 'x' }, keys = 'h' }
+		{ mode = { 'n', 'x' }, keys = 'h' },
+		{ mode = { 'n', 'x' }, keys = 'g' },
+		{ mode = { 'n', 'x' }, keys = "'" },
+		{ mode = { 'n', 'x' }, keys = '`' },
+		{ mode = { 'n', 'x' }, leys = 'z' },
+		{ mode = { 'n', 'x' }, keys = 'd' }
 	}
 })
