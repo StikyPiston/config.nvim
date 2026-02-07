@@ -45,3 +45,7 @@ map('n', '<C-Up>',     '<C-w>k')
 map('n', '<C-Down>',   '<C-w>j')
 map('n', '<C-Left>',   '<C-w>h')
 map('n', '<C-Right>',  '<C-w>l')
+
+-- Double-letter binds
+map('n', 'tT', ':Oil<CR>', { desc = "Open oil"})
+map('n', 'fF', ':Pick files<CR>', { desc = "Open mini.pick", silent = true })
