@@ -1,8 +1,6 @@
 -- Catppuccin theme
 
-vim.pack.add({
-	"https://github.com/catppuccin/nvim"
-})
+vim.pack.add({ "https://github.com/catppuccin/nvim" })
 
 vim.cmd.colorscheme "catppuccin-mocha"
 vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
