@@ -25,14 +25,13 @@ map({ "n", "v", "o" }, "l", "l")
 -- Bind ; to insert
 map('n', ';', 'i', { desc = "Enter insert mode" })
 
-
 -- Leader key binds
-map('n', '<leader>w', ':w<CR>')
-map('n', '<leader>q', ':q<CR>')
-map('n', 'hH',         ':tabNext<CR>')
-map('n', 'hE',         ':tabnew<CR>')
-map('n', 'hK',         vim.cmd.split)
-map('n', 'hL',         vim.cmd.vsplit)
+map('n', '<leader>w', ':w<CR>', { desc = "Write current buffer", silent = true })
+map('n', '<leader>q', ':q<CR>', { desc = "Close current buffer", silent = true })
+map('n', 'hH',         ':tabNext<CR>', { desc = "Switch to next tab", silent = true })
+map('n', 'hE',         ':tabnew<CR>', { desc = "Open new tab", silent = true })
+map('n', 'hK',         vim.cmd.split, { desc = "Open horizontal split", silent = true })
+map('n', 'hL',         vim.cmd.vsplit, { desc = "Open vertical split", silent = true })
 map('n', '<C-Up>',     '<C-w>k')
 map('n', '<C-Down>',   '<C-w>j')
 map('n', '<C-Left>',   '<C-w>h')
