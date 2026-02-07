@@ -22,6 +22,7 @@ require("plugins.nvim-highlight-colors")
 require("plugins.blink-cmp")
 require("plugins.unobtrusive-relnums")
 require("plugins.cheaty")
+require("plugins.barbar")
 
 -- LSP servers
 require("lsp.gopls")
