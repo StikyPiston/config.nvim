@@ -24,6 +24,7 @@ require("plugins.unobtrusive-relnums")
 require("plugins.cheaty")
 require("plugins.barbar")
 require("plugins.lazydev")
+require("plugins.gitsigns")
 
 -- LSP servers
 require("lsp.gopls")
