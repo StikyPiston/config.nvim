@@ -20,6 +20,7 @@ require("plugins.triforce")
 require("plugins.markview")
 require("plugins.nvim-highlight-colors")
 require("plugins.blink-cmp")
+require("plugins.unobtrusive-relnums")
 
 -- LSP servers
 require("lsp.gopls")
