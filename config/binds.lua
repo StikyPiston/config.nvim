@@ -28,6 +28,9 @@ map('n', ';', 'i', { desc = "Enter insert mode" })
 -- Leader key binds
 map('n', '<leader>w', ':w<CR>', { desc = "Write current buffer", silent = true })
 map('n', '<leader>q', ':q<CR>', { desc = "Close current buffer", silent = true })
+map('n', '<leader>lf', vim.lsp.buf.format, { desc = "Language format", silent = true })
+
+-- Splits
 map('n', 'hH',         ':tabNext<CR>', { desc = "Switch to next tab", silent = true })
 map('n', 'hE',         ':tabnew<CR>', { desc = "Open new tab", silent = true })
 map('n', 'hK',         vim.cmd.split, { desc = "Open horizontal split", silent = true })
