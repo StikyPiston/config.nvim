@@ -21,3 +21,6 @@ map({ "n", "v", "o" }, "i", "k")
 map({ "n", "v", "o" }, "k", "j")
 map({ "n", "v", "o" }, "j", "h")
 map({ "n", "v", "o" }, "l", "l")
+
+-- Bind ; to insert
+map('n', ';', 'i', { desc = "Enter insert mode" })
