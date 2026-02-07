@@ -17,6 +17,7 @@ require("plugins.lualine")
 require("plugins.noice")
 require("plugins.triforce")
 require("plugins.markview")
+require("plugins.nvim-highlight-colors")
 
 -- LSP servers
 require("lsp.gopls")
