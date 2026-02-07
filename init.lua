@@ -13,6 +13,7 @@ require("plugins.catppuccin")
 require("plugins.oil")
 require("plugins.mini")
 require("plugins.lspconfig")
+require("plugins.lualine")
 
 -- LSP servers
 require("lsp.gopls")
