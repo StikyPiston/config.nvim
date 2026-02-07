@@ -15,6 +15,7 @@ require("plugins.mini")
 require("plugins.lspconfig")
 require("plugins.lualine")
 require("plugins.noice")
+require("plugins.triforce")
 
 -- LSP servers
 require("lsp.gopls")
