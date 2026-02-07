@@ -14,6 +14,7 @@ require("plugins.oil")
 require("plugins.mini")
 require("plugins.lspconfig")
 require("plugins.lualine")
+require("plugins.noice")
 
 -- LSP servers
 require("lsp.gopls")
