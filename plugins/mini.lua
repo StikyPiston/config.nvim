@@ -11,7 +11,7 @@ require("mini.clue").setup({
 		{ mode = { 'n', 'x' }, keys = 'g' },
 		{ mode = { 'n', 'x' }, keys = "'" },
 		{ mode = { 'n', 'x' }, keys = '`' },
-		{ mode = { 'n', 'x' }, leys = 'z' },
+		{ mode = { 'n', 'x' }, keys = 'z' },
 		{ mode = { 'n', 'x' }, keys = 'd' }
 	}
 })
