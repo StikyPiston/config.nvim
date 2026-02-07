@@ -18,6 +18,7 @@ require("plugins.noice")
 require("plugins.triforce")
 require("plugins.markview")
 require("plugins.nvim-highlight-colors")
+require("plugins.blink-cmp")
 
 -- LSP servers
 require("lsp.gopls")
