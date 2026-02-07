@@ -7,6 +7,7 @@
 -- Require the actual configs
 require("config.options")
 require("config.binds")
+require("config.diagnostics")
 
 -- Plugins
 require("plugins.catppuccin")
