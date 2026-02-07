@@ -13,3 +13,10 @@ require("plugins.catppuccin")
 require("plugins.oil")
 require("plugins.mini")
 require("plugins.lspconfig")
+
+-- LSP servers
+require("lsp.gopls")
+require("lsp.lua_ls")
+require("lsp.marksman")
+require("lsp.nixd")
+require("lsp.rust_analyzer")
