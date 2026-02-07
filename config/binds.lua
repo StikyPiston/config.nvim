@@ -29,6 +29,7 @@ map('n', ';', 'i', { desc = "Enter insert mode" })
 map('n', '<leader>w', ':w<CR>', { desc = "Write current buffer", silent = true })
 map('n', '<leader>q', ':q<CR>', { desc = "Close current buffer", silent = true })
 map('n', '<leader>lf', vim.lsp.buf.format, { desc = "Language format", silent = true })
+map('n', '<leader>cs', ':Cheaty', { desc = "Open cheaty cheatsheet", silent = true })
 
 -- Splits
 map('n', 'hH',         ':tabNext<CR>', { desc = "Switch to next tab", silent = true })
