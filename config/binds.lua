@@ -34,6 +34,7 @@ map('n', '<leader>tp', ':Triforce profile<CR>', { desc = "Open triforce profile"
 map('n', '<leader>sp', ':StudytoolsPomodoro 25 5<CR>', { desc = "Start pomodoro session", silent = true })
 map('n', '<leader>sP', ':StudytoolsPomodoroStatus<CR>', { desc = "Show pomodoro status", silent = true })
 map('n', '<leader>sb', ':StudytoolsBlurt<CR>', { desc = "Open blurt buffer", silent = true })
+map('n', '<leader>lg', function() Snacks.lazygit() end, { desc = "Open lazygit", silent = true })
 
 -- Splits
 map('n', 'hH',         ':tabNext<CR>', { desc = "Switch to next tab", silent = true })
