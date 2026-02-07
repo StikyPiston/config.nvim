@@ -5,4 +5,4 @@
 -- |_| \_|\___|\___/ \_/ |_|_| |_| |_|
 
 -- Require the actual configs
-require("config")
+require("config.options")
