@@ -6,8 +6,6 @@
   };
 
   outputs = inputs: {
-    modules = [
-      ./neovim-wrapped.nix
-    ];
+    modules = [ "./neovim-wrapped.nix" ];
   };
 }
