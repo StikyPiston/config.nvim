@@ -4,6 +4,10 @@
 -- | |\  |  __/ (_) \ V /| | | | | | |
 -- |_| \_|\___|\___/ \_/ |_|_| |_| |_|
 
+local config_dir = vim.fn.fnamemodify(vim.fn.expand("$MYVIMRC"), ":h")
+vim.opt.runtimepath:prepend(config_dir)
+vim.opt.packpath:prepend(config_dir)
+
 -- Require the actual configs
 require("config.options")
 require("config.binds")
