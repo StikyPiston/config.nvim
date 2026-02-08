@@ -23,15 +23,9 @@
           name = "nvim";
           buildInputs = [ pkgs.makeWrapper ];
           paths = [ neovim-nightly-overlay.packages.${pkgs.stdenv.hostPlatform.system}.default ];
-
-          installPhase = ''
-            mkdir -p $out
-            cp -r $src $out/config
-          '';
-
           postBuild = ''
             		wrapProgram $out/bin/nvim \
-            			--append-flags "-u $out/config/init.lua"
+            			--append-flags "-u ${./init.lua}"
           '';
         };
 
