@@ -19,23 +19,24 @@
         pkgs = import nixpkgs { inherit system; };
       in
       {
-        packages.default = pkgs.symlinkJoin {
-          name = "nvim";
-          buildInputs = [ pkgs.makeWrapper ];
+        packages.default = pkgs.stdenv.mkDerivation {
+          pname = "nvim";
+          version = "0.1.0";
+
+          src = self;
+
+          nativeBuildInputs = [ pkgs.makeWrapper ];
           paths = [ neovim-nightly-overlay.packages.${pkgs.stdenv.hostPlatform.system}.default ];
 
           installPhase = ''
-            mkdir -p $out
-            cp -r $src $out/config
+            mkdir -p $out/config
+            cp -r $src/* $out/config
             chmod -R u+rwX,go+rX $out/config
-          '';
-
-          postBuild = ''
-            		wrapProgram $out/bin/nvim \
-            			--append-flags "-u $out/config/init.lua"
+            mkdir -p $out/bin
+            makeWrapper ${pkgs.neovim}/bin/nvim $out/bin/nvim \
+              --add-flags "-u $out/config/init.lua"
           '';
         };
-
       }
     );
 }
