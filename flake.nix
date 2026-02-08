@@ -27,7 +27,6 @@
           installPhase = ''
             mkdir -p $out
             cp -r $src $out/config
-            chmod -R u+rwX,go+rX $out/config
           '';
 
           postBuild = ''
