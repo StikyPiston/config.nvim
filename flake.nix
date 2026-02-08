@@ -34,7 +34,9 @@
             chmod -R u+rwX,go+rX $out/config
             mkdir -p $out/bin
             makeWrapper ${pkgs.neovim}/bin/nvim $out/bin/nvim \
-            --set NVIM_APPNAME nvim
+            --add-flags "--cmd 'set runtimepath^=$out/config'" \
+            --add-flags "--cmd 'set packpath^=$out/config'" \
+            --add-flags "-u $out/config/init.lua"
           '';
         };
       }
